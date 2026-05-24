@@ -6,7 +6,7 @@
     <em>Multi-agent pipelines · Full-stack web apps · Real-time streaming · Guardrails · Real-world APIs</em>
   </p>
   <p align="center">
-    <a href="https://github.com/ishandutta0098"><img alt="Author" src="https://img.shields.io/badge/creator-Ishan%20Dutta-blue?style=flat-square" /></a>
+    <a href="https://github.com/kedarnath-dev-byte"><img alt="Maintainer" src="https://img.shields.io/badge/maintainer-Kedarnath-blue?style=flat-square" /></a>
     <img alt="Python 3.12+" src="https://img.shields.io/badge/python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white" />
     <img alt="uv" src="https://img.shields.io/badge/package%20manager-uv-DE5FE9?style=flat-square" />
     <img alt="OpenAI Agents SDK" src="https://img.shields.io/badge/framework-OpenAI%20Agents%20SDK-412991?style=flat-square&logo=openai&logoColor=white" />
@@ -23,6 +23,16 @@
 **Outskill AI Lab** is a collection of production-grade AI Agent projects, each designed as a complete, end-to-end multi-agent system. Every project follows battle-tested [agentic design patterns](.cursor/rules/agentic_design_patterns.mdc) — prompt chaining, routing, tool use, guardrails, human-in-the-loop escalation, and observability — implemented with the [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) and powered by [OpenRouter](https://openrouter.ai/).
 
 Each project is self-contained with its own agents, tools, models, guardrails, simulators (or real APIs), documentation, a working `main.py` you can run immediately, and a **full-stack web application** (FastAPI backend + React frontend) with real-time SSE streaming.
+
+## Maintainer Notes
+
+This repository is maintained as my AI-agent engineering portfolio fork. My focus is on making the projects easier to run, review, and extend by improving developer documentation, keeping the FastAPI + React application structure visible, and adding small utilities that summarize the workspace.
+
+Recent portfolio-focused improvements include:
+
+- Added a project inventory CLI for quickly reviewing agents, tools, models, API apps, frontend apps, and documentation coverage.
+- Updated package metadata so the repository presents as a complete AI-agent lab rather than a placeholder project.
+- Kept project READMEs and architecture notes organized around recruiter-friendly review: problem, stack, pipeline, run commands, and extension points.
 
 > **Contributing** — Want to add a new project or improve an existing one? Open an issue and let's discuss!
 
@@ -189,7 +199,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ishandutta0098/outskill-ai-lab.git
+git clone https://github.com/kedarnath-dev-byte/outskill-ai-lab.git
 cd outskill-ai-lab
 ```
 
@@ -200,6 +210,20 @@ uv sync
 ```
 
 This installs all dependencies from `pyproject.toml` into a virtual environment managed by `uv`.
+
+### Review the Project Inventory
+
+Use the included inventory command to summarize every project in the lab:
+
+```bash
+uv run outskill-projects
+```
+
+You can also run it directly:
+
+```bash
+uv run python -m scripts.project_inventory
+```
 
 ### 3. Configure Environment Variables
 
@@ -386,5 +410,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  <em>Built with ❤️ by <a href="https://github.com/ishandutta0098">Ishan Dutta</a></em>
+  <em>Maintained as a portfolio fork by <a href="https://github.com/kedarnath-dev-byte">Kedarnath</a></em>
 </p>
