@@ -1,7 +1,7 @@
 [project]
 name = "outskill-ai-lab"
 version = "0.1.0"
-description = "Add your description here"
+description = "A portfolio lab of production-style AI agent systems with FastAPI backends and React frontends"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -21,3 +21,6 @@ dependencies = [
     "wikipedia-api>=0.9.0",
     "youtube-transcript-api>=1.2.4",
 ]
+
+[project.scripts]
+outskill-projects = "scripts.project_inventory:main"
