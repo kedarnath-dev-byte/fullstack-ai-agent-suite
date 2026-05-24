@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">🧪 Outskill AI Lab</h1>
+  <h1 align="center">Fullstack AI Agent Suite</h1>
   <p align="center">
     Production-grade AI Agent projects built with the OpenAI Agents SDK
     <br />
@@ -20,7 +20,7 @@
 
 ## About
 
-**Outskill AI Lab** is a collection of production-grade AI Agent projects, each designed as a complete, end-to-end multi-agent system. Every project follows battle-tested [agentic design patterns](.cursor/rules/agentic_design_patterns.mdc) — prompt chaining, routing, tool use, guardrails, human-in-the-loop escalation, and observability — implemented with the [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) and powered by [OpenRouter](https://openrouter.ai/).
+**Fullstack AI Agent Suite** is a collection of production-grade AI Agent projects, each designed as a complete, end-to-end multi-agent system. Every project follows battle-tested [agentic design patterns](.cursor/rules/agentic_design_patterns.mdc) — prompt chaining, routing, tool use, guardrails, human-in-the-loop escalation, and observability — implemented with the [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) and powered by [OpenRouter](https://openrouter.ai/).
 
 Each project is self-contained with its own agents, tools, models, guardrails, simulators (or real APIs), documentation, a working `main.py` you can run immediately, and a **full-stack web application** (FastAPI backend + React frontend) with real-time SSE streaming.
 
